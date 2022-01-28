@@ -1,4 +1,4 @@
-﻿using EF_Test.Data.Models;
+﻿using EF_Test.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

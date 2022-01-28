@@ -1,5 +1,5 @@
 using EF_Test.Data;
-using EF_Test.Data.Interfaces;
+using EF_Test.Domain.Interfaces;
 using EF_Test.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,7 +13,10 @@ services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 services.AddEndpointsApiExplorer();
 services.AddSwaggerGen();
+
 services.AddTransient<IOrderRepository, OrderRepository>();
+services.AddTransient<IProductRepository, ProductRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

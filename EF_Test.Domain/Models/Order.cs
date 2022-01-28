@@ -1,4 +1,4 @@
-namespace EF_Test.Data.Models{
+namespace EF_Test.Domain.Models{
   public class Order
   {
     public int OrderId { get; set; }
